@@ -29,7 +29,7 @@ jobs:
       run: nuget restore ./src/CodingWithCalvin.OpenBinFolder.sln
     
     - name: 5. Building x64 Project
-      run: msbuild './src/CodingWithCalvin.OpenBinFolder.Vsix/CodingWithCalvin.OpenBinFolder.Vsix.x86.csproj' /p:configuration='Release' /p:platform='x64'
+      run: msbuild './src/CodingWithCalvin.OpenBinFolder.Vsix/CodingWithCalvin.OpenBinFolder.Vsix.csproj' /p:configuration='Release' /p:platform='x64'
         
     - name: 8. Publishing x64 Build Artifact
       uses: actions/upload-artifact@v2
