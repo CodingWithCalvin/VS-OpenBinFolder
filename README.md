@@ -10,12 +10,12 @@
 
 ## Marketplace Status
 
-[![Marketplace Installations](https://img.shields.io/visual-studio-marketplace/i/CodingWithCalvin.OpenBinFolder?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/i/CodingWithCalvin.OpenBinFolder?style=for-the-badge) [![Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/CodingWithCalvin.OpenBinFolder?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/d/CodingWithCalvin.OpenBinFolder?style=for-the-badge)
-[![Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/CodingWithCalvin.OpenBinFolder?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/v/CodingWithCalvin.OpenBinFolder?style=for-the-badge) [![Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/CodingWithCalvin.OpenBinFolder2?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/r/CodingWithCalvin.OpenBinFolder?style=for-the-badge)
+[![Marketplace Installations](https://img.shields.io/visual-studio-marketplace/i/coding-with-calvin.OpenBinFolder22?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/i/coding-with-calvin.OpenBinFolder22?style=for-the-badge) [![Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/coding-with-calvin.OpenBinFolder22?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/d/coding-with-calvin.OpenBinFolder22?style=for-the-badge)
+[![Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/CodingWithCalvin.OpenBinFolder?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/v/coding-with-calvin.OpenBinFolder22?style=for-the-badge) [![Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/coding-with-calvin.OpenBinFolder22?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/r/coding-with-calvin.OpenBinFolder22?style=for-the-badge)
 
 ## Description
 
-A Visual Studio extension that adds a right-click context menu command that allows you to open the project's output directory (i.e, the "bin" folder) in Windows File Explorer.
+A Visual Studio extension that adds a right-click context menu command that allows you to open the project's output directory (i.e, the "bin" folder) in Windows File Explorer. This uses the currently active solution/project configuration to determin *WHICH* output folder to navigate to.
 
 ## Contribute
 

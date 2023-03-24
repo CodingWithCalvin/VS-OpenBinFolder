@@ -8,6 +8,6 @@
   "priceCategory": "free",
   "publisher": "coding-with-calvin",
   "private": false,
-  "qna": true,
+  "qna": false,
   "repo": "https://github.com/CalvinAllen/OpenBinFolder"
 }

@@ -13,6 +13,6 @@ namespace CodingWithCalvin.OpenBinFolder.Vsix
         public const string Language = "en-US";
         public const string Version = "1.1";
         public const string Author = "Coding with Calvin";
-        public const string Tags = "bin,debug,folder,output";
+        public const string Tags = "bin,debug,release,folder,output";
     }
 }
