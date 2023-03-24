@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="0F713362-1708-4956-85F7-A3C204735E3C" Version="1.1" Language="en-US" Publisher="Coding with Calvin" />
+        <DisplayName>Open Bin Folder</DisplayName>
+        <Description xml:space="preserve">Adds an 'Open Bin Folder' to the right click menu of the project for quick access to the builds output folder.</Description>
+        <MoreInfo>https://github.com/CalvinAllen/OpenInNotepadPlusPlus</MoreInfo>
+        <Icon>Resources\folder-icon.png</Icon>
+        <Tags>bin,debug,folder,output</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Community">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>
