@@ -25,4 +25,4 @@ jobs:
         with:
           marketplace-pat: ${{ secrets.VS_PAT }}
           publish-manifest-path: ./src/extension.manifest.json
-          vsixpath: ./artifact/CodingWithCalvin.OpenBinFolder.Vsix.vsix
+          vsix-path: ./artifact/CodingWithCalvin.OpenBinFolder.Vsix.vsix
