@@ -15,7 +15,7 @@
 
 ## Description
 
-A Visual Studio extension that adds a right-click context menu command that allows you to open the project's output directory (i.e, the "bin" folder) in Windows File Explorer. This uses the currently active solution/project configuration to determin *WHICH* output folder to navigate to.
+A Visual Studio (2022 and up) extension that adds a right-click context menu command that allows you to open the project's output directory (i.e, the "bin" folder) in Windows File Explorer. This uses the currently active solution/project configuration to determin *WHICH* output folder to navigate to.
 
 ## Contribute
 
