@@ -11,7 +11,7 @@
 ## Marketplace Status
 
 [![Marketplace Installations](https://img.shields.io/visual-studio-marketplace/i/coding-with-calvin.OpenBinFolder22?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/i/coding-with-calvin.OpenBinFolder22?style=for-the-badge) [![Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/coding-with-calvin.OpenBinFolder22?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/d/coding-with-calvin.OpenBinFolder22?style=for-the-badge)
-[![Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/CodingWithCalvin.OpenBinFolder?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/v/coding-with-calvin.OpenBinFolder22?style=for-the-badge) [![Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/coding-with-calvin.OpenBinFolder22?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/r/coding-with-calvin.OpenBinFolder22?style=for-the-badge)
+[![Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/coding-with-calvin.OpenBinFolder?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/v/coding-with-calvin.OpenBinFolder22?style=for-the-badge) [![Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/coding-with-calvin.OpenBinFolder22?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/r/coding-with-calvin.OpenBinFolder22?style=for-the-badge)
 
 ## Description
 
