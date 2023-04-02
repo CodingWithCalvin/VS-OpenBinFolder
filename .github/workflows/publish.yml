@@ -1,6 +1,7 @@
 name: Publish to VS Marketplace
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - "release/**"
@@ -10,7 +11,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Download artifact
         id: download-artifact
