@@ -24,6 +24,6 @@ jobs:
       - name: Publish Release to Marketplace
         uses: CalvinAllen/action-vs-marketplace-publish@v1
         with:
-          marketplace-pat: ${{ secrets.VS_PAT }}
+          marketplace-pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
           publish-manifest-path: ./src/extension.manifest.json
           vsix-path: ./artifact/CodingWithCalvin.OpenBinFolder.Vsix.vsix
