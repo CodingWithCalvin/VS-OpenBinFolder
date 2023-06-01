@@ -28,7 +28,7 @@ namespace CodingWithCalvin.OpenBinFolder.Vsix.Commands
             var menuItem = new MenuCommand(OpenPath, menuCommandId);
             commandService.AddCommand(menuItem);
         }
-        
+
         private IServiceProvider ServiceProvider => _package;
 
         public static void Initialize(Package package)
@@ -39,7 +39,7 @@ namespace CodingWithCalvin.OpenBinFolder.Vsix.Commands
         private void OpenPath(object sender, EventArgs e)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
-            
+
             if (!(ServiceProvider.GetService(typeof(DTE)) is DTE2 dte))
             {
                 throw new ArgumentNullException(nameof(dte));
@@ -69,19 +69,26 @@ namespace CodingWithCalvin.OpenBinFolder.Vsix.Commands
 
             void OpenProjectBinFolder(Project project)
             {
-                var projectPath = Path.GetDirectoryName(project.FullName) 
+                var projectPath = Path.GetDirectoryName(project.FullName)
                                   ?? throw new InvalidOperationException();
 
-                var projectOutputPath = project.ConfigurationManager.ActiveConfiguration.Properties
-                    .Item("OutputPath").Value.ToString();
+                var projectActiveConfigProperties = project.ConfigurationManager.ActiveConfiguration.Properties;
+                if (projectActiveConfigProperties != null)
+                {
+                    var projectOutputPath = projectActiveConfigProperties.Item("OutputPath").Value.ToString();
 
-                var projectBinPath = Path.Combine(projectPath, projectOutputPath);
+                    var projectBinPath = Path.Combine(projectPath, projectOutputPath);
 
-                System.Diagnostics.Process.Start(
-                    Directory.Exists(projectBinPath) 
-                        ? projectBinPath 
-                        : projectPath
-                );
+                    System.Diagnostics.Process.Start(
+                        Directory.Exists(projectBinPath)
+                            ? projectBinPath
+                            : projectPath
+                    );
+                }
+                else
+                {
+                    MessageBox.Show($@"Unable to determine output path for selected project");
+                }
             }
         }
     }
