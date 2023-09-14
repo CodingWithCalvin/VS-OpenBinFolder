@@ -4,7 +4,7 @@
         <Identity Id="0F713362-1708-4956-85F7-A3C204735E3C" Version="1.1" Language="en-US" Publisher="Coding with Calvin" />
         <DisplayName>Open Bin Folder</DisplayName>
         <Description xml:space="preserve">Adds an 'Open Bin Folder' to the right click menu of the project for quick access to the builds output folder.</Description>
-        <MoreInfo>https://github.com/CalvinAllen/OpenInNotepadPlusPlus</MoreInfo>
+        <MoreInfo>https://github.com/CalvinAllen/OpenBinFolder</MoreInfo>
         <Icon>Resources\logo.png</Icon>
         <Tags>bin,debug,folder,output</Tags>
     </Metadata>
