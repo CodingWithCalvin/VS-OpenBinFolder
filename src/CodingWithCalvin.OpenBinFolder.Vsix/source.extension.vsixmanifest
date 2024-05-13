@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="0F713362-1708-4956-85F7-A3C204735E3C" Version="1.1" Language="en-US" Publisher="Coding with Calvin" />
+        <Identity Id="VS-OpenBinFolder" Version="1.1" Language="en-US" Publisher="Coding with Calvin" />
         <DisplayName>Open Bin Folder</DisplayName>
         <Description xml:space="preserve">Adds an 'Open Bin Folder' to the right click menu of the project for quick access to the builds output folder.</Description>
-        <MoreInfo>https://github.com/CalvinAllen/OpenBinFolder</MoreInfo>
+        <MoreInfo>https://github.com/CodingWithCalvin/VS-OpenBinFolder</MoreInfo>
         <Icon>Resources\logo.png</Icon>
         <Tags>bin,debug,folder,output</Tags>
     </Metadata>
