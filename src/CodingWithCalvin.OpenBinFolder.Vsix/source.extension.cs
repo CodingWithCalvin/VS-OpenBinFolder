@@ -12,7 +12,7 @@ namespace CodingWithCalvin.OpenBinFolder.Vsix
         public const string Description = @"Adds an 'Open Bin Folder' to the right click menu of the project for quick access to the builds output folder.";
         public const string Language = "en-US";
         public const string Version = "1.1";
-        public const string Author = "Coding with Calvin";
+        public const string Author = "Coding With Calvin";
         public const string Tags = "bin,debug,release,folder,output";
     }
 }
