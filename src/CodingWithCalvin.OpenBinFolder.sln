@@ -5,6 +5,14 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingWithCalvin.OpenBinFolder.Vsix", "CodingWithCalvin.OpenBinFolder.Vsix\CodingWithCalvin.OpenBinFolder.Vsix.csproj", "{66C238AD-8111-4579-A40C-48859AB61F25}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6088E91A-FC66-421E-A439-8EE4E7D28147}"
+	ProjectSection(SolutionItems) = preProject
+		extension.manifest.json = extension.manifest.json
+		..\.github\workflows\publish.yml = ..\.github\workflows\publish.yml
+		..\README.md = ..\README.md
+		..\.github\workflows\release_build_and_deploy.yml = ..\.github\workflows\release_build_and_deploy.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
