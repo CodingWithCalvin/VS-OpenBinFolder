@@ -20,7 +20,8 @@ jobs:
     - uses: nuget/setup-nuget@v2
 
     - name: 1. Versioning Release
-      uses: CalvinAllen/action-vs-vsix-versioner@v1
+      id: step-version
+      uses: CodingWithCalvin/GHA-VSVsixVersioner@v1
       with:
         extension-manifest-file: 'src/CodingWithCalvin.OpenBinFolder/source.extension.vsixmanifest'
         extension-source-file: 'src/CodingWithCalvin.OpenBinFolder/source.extension.cs'
