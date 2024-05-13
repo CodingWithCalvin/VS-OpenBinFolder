@@ -5,9 +5,5 @@
     "internalName": "VS-OpenBinFolder"
   },
   "overview": "../README.md",
-  "priceCategory": "free",
-  "publisher": "CodingWithCalvin",
-  "private": false,
-  "qna": false,
-  "repo": "https://github.com/CodingWithCalvin/VS-OpenBinFolder"
+  "publisher": "CodingWithCalvin"
 }
