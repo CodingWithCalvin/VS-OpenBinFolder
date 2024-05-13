@@ -15,7 +15,7 @@
     </Buttons>
 
     <Bitmaps>
-      <Bitmap guid="IconGuid" usedList="FolderIcon" href="./Resources/folder-icon.png" />
+      <Bitmap guid="IconGuid" usedList="FolderIcon" href="../resources/folder-icon.png" />
     </Bitmaps>
   </Commands>
 
