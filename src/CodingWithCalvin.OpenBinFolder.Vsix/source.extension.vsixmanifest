@@ -7,6 +7,7 @@
         <MoreInfo>https://github.com/CodingWithCalvin/VS-OpenBinFolder</MoreInfo>
         <Icon>Resources\logo.png</Icon>
         <Tags>bin,debug,folder,output</Tags>
+        <License>..\..\LICENSE.txt</License>
     </Metadata>
     <Installation>
         <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Community">
