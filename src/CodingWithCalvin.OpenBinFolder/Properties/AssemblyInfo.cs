@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
-using CodingWithCalvin.OpenBinFolder.Vsix;
+using CodingWithCalvin.OpenBinFolder;
 
 [assembly: AssemblyTitle(Vsix.Name)]
 [assembly: AssemblyDescription(Vsix.Description)]

@@ -33,8 +33,8 @@
     <ProjectGuid>{66C238AD-8111-4579-A40C-48859AB61F25}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CodingWithCalvin.OpenBinFolder.Vsix</RootNamespace>
-    <AssemblyName>CodingWithCalvin.OpenBinFolder.Vsix</AssemblyName>
+    <RootNamespace>CodingWithCalvin.OpenBinFolder</RootNamespace>
+    <AssemblyName>CodingWithCalvin.OpenBinFolder</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
@@ -63,6 +63,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="resources\LICENSE">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
       <Generator>VsixManifestGenerator</Generator>
@@ -93,16 +96,12 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\LICENSE">
-      <Link>Resources\LICENSE</Link>
+    <Content Include="..\..\resources\folder-icon.png">
+      <Link>resources\folder-icon.png</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="..\Resources\folder-icon.png">
-      <Link>Resources\folder-icon.png</Link>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="..\Resources\logo.png">
-      <Link>Resources\logo.png</Link>
+    <Content Include="..\..\resources\logo.png">
+      <Link>resources\logo.png</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
   </ItemGroup>

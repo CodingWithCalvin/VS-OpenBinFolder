@@ -7,7 +7,7 @@ using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
 using Project = EnvDTE.Project;
 
-namespace CodingWithCalvin.OpenBinFolder.Vsix.Commands
+namespace CodingWithCalvin.OpenBinFolder.Commands
 {
     internal class OpenBinFolderCommand
     {
@@ -17,18 +17,22 @@ namespace CodingWithCalvin.OpenBinFolder.Vsix.Commands
         {
             _package = package;
 
-            var commandService = (OleMenuCommandService)ServiceProvider.GetService(typeof(IMenuCommandService));
+            var commandService = (OleMenuCommandService)
+                ServiceProvider.GetService(typeof(IMenuCommandService));
 
             if (commandService == null)
             {
                 return;
             }
 
-            var menuCommandId = new CommandID(PackageGuids.CommandSetGuid, PackageIds.OpenBinCommandId);
+            var menuCommandId = new CommandID(
+                PackageGuids.CommandSetGuid,
+                PackageIds.OpenBinCommandId
+            );
             var menuItem = new MenuCommand(OpenPath, menuCommandId);
             commandService.AddCommand(menuItem);
         }
-        
+
         private IServiceProvider ServiceProvider => _package;
 
         public static void Initialize(Package package)
@@ -39,13 +43,16 @@ namespace CodingWithCalvin.OpenBinFolder.Vsix.Commands
         private void OpenPath(object sender, EventArgs e)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
-            
+
             if (!(ServiceProvider.GetService(typeof(DTE)) is DTE2 dte))
             {
                 throw new ArgumentNullException(nameof(dte));
             }
 
-            foreach (UIHierarchyItem selectedItem in (Array)dte.ToolWindows.SolutionExplorer.SelectedItems)
+            foreach (
+                UIHierarchyItem selectedItem in (Array)
+                    dte.ToolWindows.SolutionExplorer.SelectedItems
+            )
             {
                 switch (selectedItem.Object)
                 {
@@ -56,11 +63,13 @@ namespace CodingWithCalvin.OpenBinFolder.Vsix.Commands
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show($@"
+                            MessageBox.Show(
+                                $@"
                                 Unable to determine output path for selected project
                                 {Environment.NewLine}
                                 {Environment.NewLine}
-                                Exception: {ex.Message}");
+                                Exception: {ex.Message}"
+                            );
                         }
 
                         break;
@@ -69,18 +78,18 @@ namespace CodingWithCalvin.OpenBinFolder.Vsix.Commands
 
             void OpenProjectBinFolder(Project project)
             {
-                var projectPath = Path.GetDirectoryName(project.FullName) 
-                                  ?? throw new InvalidOperationException();
+                var projectPath =
+                    Path.GetDirectoryName(project.FullName)
+                    ?? throw new InvalidOperationException();
 
-                var projectOutputPath = project.ConfigurationManager.ActiveConfiguration.Properties
-                    .Item("OutputPath").Value.ToString();
+                var projectOutputPath = project
+                    .ConfigurationManager.ActiveConfiguration.Properties.Item("OutputPath")
+                    .Value.ToString();
 
                 var projectBinPath = Path.Combine(projectPath, projectOutputPath);
 
                 System.Diagnostics.Process.Start(
-                    Directory.Exists(projectBinPath) 
-                        ? projectBinPath 
-                        : projectPath
+                    Directory.Exists(projectBinPath) ? projectBinPath : projectPath
                 );
             }
         }
