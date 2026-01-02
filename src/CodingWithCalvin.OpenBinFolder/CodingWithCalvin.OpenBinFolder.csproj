@@ -63,7 +63,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="resources\LICENSE">
+    <Content Include="..\..\LICENSE">
+      <Link>resources\LICENSE</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">
