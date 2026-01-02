@@ -27,7 +27,7 @@ jobs:
         extension-source-file: 'src/CodingWithCalvin.OpenBinFolder/source.extension.cs'
 
     - name: 2. Restoring Packages
-      run: nuget restore src/CodingWithCalvin.OpenBinFolder.sln
+      run: nuget restore src/CodingWithCalvin.OpenBinFolder.slnx
     
     - name: 3. Building Project
       run: msbuild 'src/CodingWithCalvin.OpenBinFolder/CodingWithCalvin.OpenBinFolder.csproj' /p:configuration='Release' /p:platform='x64' /p:DeployExtension=False
