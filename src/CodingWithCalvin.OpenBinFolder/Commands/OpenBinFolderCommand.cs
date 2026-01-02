@@ -5,12 +5,19 @@ using System.Windows.Forms;
 using EnvDTE;
 using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.VCProjectEngine;
 using Project = EnvDTE.Project;
 
 namespace CodingWithCalvin.OpenBinFolder.Commands
 {
     internal class OpenBinFolderCommand
     {
+        // Project type GUIDs
+        private const string CSharpProjectKind = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}";
+        private const string VbNetProjectKind = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}";
+        private const string FSharpProjectKind = "{F2A71F9B-5D33-465A-A702-920D77279786}";
+        private const string CppProjectKind = "{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}";
+
         private readonly Package _package;
 
         private OpenBinFolderCommand(Package package)
@@ -82,15 +89,47 @@ namespace CodingWithCalvin.OpenBinFolder.Commands
                     Path.GetDirectoryName(project.FullName)
                     ?? throw new InvalidOperationException();
 
-                var projectOutputPath = project
-                    .ConfigurationManager.ActiveConfiguration.Properties.Item("OutputPath")
-                    .Value.ToString();
+                string projectBinPath;
 
-                var projectBinPath = Path.Combine(projectPath, projectOutputPath);
+                if (IsCppProject(project.Kind) && project.Object is VCProject vcProject)
+                {
+                    projectBinPath = GetCppOutputPath(vcProject, projectPath);
+                }
+                else
+                {
+                    var projectOutputPath = project
+                        .ConfigurationManager.ActiveConfiguration.Properties.Item("OutputPath")
+                        .Value.ToString();
+                    projectBinPath = Path.Combine(projectPath, projectOutputPath);
+                }
 
                 System.Diagnostics.Process.Start(
                     Directory.Exists(projectBinPath) ? projectBinPath : projectPath
                 );
+            }
+
+            bool IsCppProject(string projectKind)
+            {
+                return string.Equals(projectKind, CppProjectKind, StringComparison.OrdinalIgnoreCase);
+            }
+
+            string GetCppOutputPath(VCProject vcProject, string projectPath)
+            {
+                var activeConfig = vcProject.ActiveConfiguration as VCConfiguration;
+                if (activeConfig == null)
+                {
+                    throw new InvalidOperationException("Unable to get active configuration for C++ project");
+                }
+
+                // Evaluate expands macros like $(OutDir), $(Configuration), $(Platform), etc.
+                var outDir = activeConfig.Evaluate("$(OutDir)");
+
+                if (Path.IsPathRooted(outDir))
+                {
+                    return outDir;
+                }
+
+                return Path.Combine(projectPath, outDir);
             }
         }
     }
