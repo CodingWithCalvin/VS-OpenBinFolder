@@ -99,14 +99,11 @@ namespace CodingWithCalvin.OpenBinFolder.Commands
 
                 var projectBinPath = Path.Combine(projectPath, projectOutputPath);
 
-                activity?.SetTag("project.name", project.Name);
-                activity?.SetTag("project.binPath", projectBinPath);
-
-                System.Diagnostics.Process.Start(
+                                System.Diagnostics.Process.Start(
                     Directory.Exists(projectBinPath) ? projectBinPath : projectPath
                 );
 
-                VsixTelemetry.LogInformation("Opened bin folder for project {ProjectName}", project.Name);
+                VsixTelemetry.LogInformation("Opened bin folder for project");
             }
             catch (Exception ex)
             {
@@ -114,8 +111,7 @@ namespace CodingWithCalvin.OpenBinFolder.Commands
                 VsixTelemetry.TrackException(ex, new Dictionary<string, object>
                 {
                     { "operation.name", "OpenProjectBinFolder" },
-                    { "project.name", project.Name }
-                });
+                    });
 
                 MessageBox.Show(
                     $@"
