@@ -1,28 +1,89 @@
-# Open Bin Folder
+# 📂 Open Bin Folder
 
-A Visual Studio extension that adds a right-click context menu command that allows you to open the project's output directory (i.e, the "bin" folder) in Windows File Explorer. This uses the currently active solution/project configuration to determin *WHICH* output folder to navigate to.
+**🚀 Instantly open your project's output directory in Windows File Explorer!**
 
-## License
+A Visual Studio 2022/2026 extension that adds a right-click context menu command to open the project's bin folder. It intelligently uses the currently active solution/project configuration to navigate to the correct output folder (Debug, Release, etc.).
 
-[![License - MIT](https://img.shields.io/github/license/codingwithcalvin/vs-OpenBinFolder?style=for-the-badge)](https://img.shields.io/github/license/codingwithcalvin/vs-OpenBinFolder?style=for-the-badge)
+---
 
-## Build Status
+[![License](https://img.shields.io/github/license/CodingWithCalvin/VS-OpenBinFolder?style=for-the-badge)](LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/CodingWithCalvin/VS-OpenBinFolder/build.yml?style=for-the-badge)](https://github.com/CodingWithCalvin/VS-OpenBinFolder/actions/workflows/build.yml)
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/codingwithcalvin/vs-OpenBinFolder/release_build_and_deploy.yml?style=for-the-badge)
+[![VS Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/CodingWithCalvin.VS-OpenBinFolder?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=CodingWithCalvin.VS-OpenBinFolder)
+[![VS Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/CodingWithCalvin.VS-OpenBinFolder?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=CodingWithCalvin.VS-OpenBinFolder)
+[![VS Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/CodingWithCalvin.VS-OpenBinFolder?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=CodingWithCalvin.VS-OpenBinFolder)
+[![VS Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/CodingWithCalvin.VS-OpenBinFolder?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=CodingWithCalvin.VS-OpenBinFolder)
 
-## Marketplace Status
+---
 
-[![Marketplace Installations](https://img.shields.io/visual-studio-marketplace/i/codingwithcalvin.vs-OpenBinFolder?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/i/codingwithcalvin.vs-OpenBinFolder?style=for-the-badge) [![Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/codingwithcalvin.vs-OpenBinFolder?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/d/codingwithcalvin.vs-OpenBinFolder?style=for-the-badge)
-[![Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/codingwithcalvin.vs-OpenBinFolder?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/v/codingwithcalvin.vs-OpenBinFolder?style=for-the-badge) [![Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/codingwithcalvin.vs-OpenBinFolder?style=for-the-badge)](https://img.shields.io/visual-studio-marketplace/r/codingwithcalvin.vs-OpenBinFolder?style=for-the-badge)
+## ✨ Features
 
-## Contribute
+- **🖱️ Right-click to open** - Simple context menu integration in Solution Explorer
+- **⚙️ Configuration-aware** - Opens the correct bin folder based on your active build configuration
+- **⚡ Lightning fast** - No settings, no dialogs, just works!
 
-Contributions are welcome! Issues, PRs, etc. While it may seem this extension is "done", who knows what the future may hold for it?
+---
 
-For cloning and building this project yourself, make sure to install the [Extensibility Essentials 2022 extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ExtensibilityEssentials2022) for Visual Studio which enables some features used by this project.
+## 📦 Installation
 
-## Contributors
+### From Visual Studio Marketplace
+
+[![VS Marketplace](https://img.shields.io/badge/VS%20Marketplace-Open%20Bin%20Folder-purple?style=for-the-badge&logo=visualstudio&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=CodingWithCalvin.VS-OpenBinFolder)
+
+1. Open Visual Studio 2022
+2. Go to **Extensions > Manage Extensions**
+3. Search for "Open Bin Folder"
+4. Click **Download** and restart Visual Studio
+
+### Manual Installation
+
+Download the latest `.vsix` from the [Releases](https://github.com/CodingWithCalvin/VS-OpenBinFolder/releases) page and double-click to install.
+
+---
+
+## 🎯 Usage
+
+1. Right-click on any project in **Solution Explorer**
+2. Select **Open Bin Folder**
+3. Windows File Explorer opens to your project's output directory
+
+That's it! The extension automatically detects your active configuration (Debug/Release) and opens the corresponding output folder.
+
+---
+
+## 📋 Requirements
+
+- 💻 Visual Studio 2022 (17.0) or later
+- 🔧 .NET Framework 4.8
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Whether it's bug reports, feature requests, or pull requests - all feedback helps make this extension better. 💪
+
+### Development Setup
+
+1. 🍴 Clone the repository
+2. 📂 Open `src/CodingWithCalvin.OpenBinFolder.slnx` in Visual Studio 2022
+3. ▶️ Press F5 to launch the experimental instance
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👥 Contributors
 
 <!-- readme: contributors -start -->
-[![CalvinAllen](https://avatars.githubusercontent.com/u/41448698?v=4&s=64)](https://github.com/CalvinAllen) [![DavidsonAudioMulti](https://avatars.githubusercontent.com/u/47409222?v=4&s=64)](https://github.com/DavidsonAudioMulti) [![MikeCheel](https://avatars.githubusercontent.com/u/2339881?v=4&s=64)](https://github.com/MikeCheel) 
+[![CalvinAllen](https://avatars.githubusercontent.com/u/41448698?v=4&s=64)](https://github.com/CalvinAllen) [![DavidsonAudioMulti](https://avatars.githubusercontent.com/u/47409222?v=4&s=64)](https://github.com/DavidsonAudioMulti) [![MikeCheel](https://avatars.githubusercontent.com/u/2339881?v=4&s=64)](https://github.com/MikeCheel)
 <!-- readme: contributors -end -->
+
+---
+
+**⭐ If you find Open Bin Folder useful, please consider giving it a star! ⭐**
+
+*Made with ❤️ for the Visual Studio community by Coding With Calvin*
