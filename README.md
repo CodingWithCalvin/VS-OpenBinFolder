@@ -79,7 +79,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 👥 Contributors
 
 <!-- readme: contributors -start -->
-[![CalvinAllen](https://avatars.githubusercontent.com/u/41448698?v=4&s=64)](https://github.com/CalvinAllen) [![DavidsonAudioMulti](https://avatars.githubusercontent.com/u/47409222?v=4&s=64)](https://github.com/DavidsonAudioMulti) [![MikeCheel](https://avatars.githubusercontent.com/u/2339881?v=4&s=64)](https://github.com/MikeCheel)
+[![CalvinAllen](https://avatars.githubusercontent.com/u/41448698?v=4&s=64)](https://github.com/CalvinAllen) [![DavidsonAudioMulti](https://avatars.githubusercontent.com/u/47409222?v=4&s=64)](https://github.com/DavidsonAudioMulti) [![MikeCheel](https://avatars.githubusercontent.com/u/2339881?v=4&s=64)](https://github.com/MikeCheel) 
 <!-- readme: contributors -end -->
 
 ---
