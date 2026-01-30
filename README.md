@@ -36,13 +36,13 @@
 
 A Visual Studio 2022/2026 extension that adds a right-click context menu command to open the project's bin folder. It intelligently uses the currently active solution/project configuration to navigate to the correct output folder (Debug, Release, etc.).
 
-## Features
+## ✨ Features
 
-- **Right-click to open** - Simple context menu integration in Solution Explorer
-- **Configuration-aware** - Opens the correct bin folder based on your active build configuration
-- **Lightning fast** - No settings, no dialogs, just works!
+- 🖱️ **Right-click to open** - Simple context menu integration in Solution Explorer
+- ⚙️ **Configuration-aware** - Opens the correct bin folder based on your active build configuration
+- ⚡ **Lightning fast** - No settings, no dialogs, just works!
 
-## Installation
+## 🛠️ Installation
 
 ### Visual Studio Marketplace
 
@@ -55,7 +55,7 @@ A Visual Studio 2022/2026 extension that adds a right-click context menu command
 
 Download the latest `.vsix` from the [Releases](https://github.com/CodingWithCalvin/VS-OpenBinFolder/releases) page and double-click to install.
 
-## Usage
+## 🚀 Usage
 
 1. Right-click on any project in **Solution Explorer**
 2. Select **Open Bin Folder**
@@ -63,29 +63,29 @@ Download the latest `.vsix` from the [Releases](https://github.com/CodingWithCal
 
 That's it! The extension automatically detects your active configuration (Debug/Release) and opens the corresponding output folder.
 
-## Requirements
+## 📋 Requirements
 
-- Visual Studio 2022 (17.0) or later
-- .NET Framework 4.8
+- 💻 Visual Studio 2022 (17.0) or later
+- 🔧 .NET Framework 4.8
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Whether it's bug reports, feature requests, or pull requests - all feedback helps make this extension better.
 
-### Development Setup
+### 🔧 Development Setup
 
 1. Clone the repository
 2. Open `src/CodingWithCalvin.OpenBinFolder.slnx` in Visual Studio 2022 or 2026
 3. Ensure you have the "Visual Studio extension development" workload installed
 4. Press F5 to launch the experimental instance
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Contributors
+## 👥 Contributors
 
 <!-- readme: contributors -start -->
 <!-- readme: contributors -end -->
