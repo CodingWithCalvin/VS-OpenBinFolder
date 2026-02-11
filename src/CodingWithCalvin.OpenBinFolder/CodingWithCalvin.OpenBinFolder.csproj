@@ -12,7 +12,9 @@
     <PackageReference Include="CodingWithCalvin.Otel4Vsix" Version="0.2.2" />
     <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.14.40265" />
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.*" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.VisualStudio.VCProjectEngine" Version="17.14.40264" />
+    <PackageReference Include="Microsoft.VisualStudio.VCProjectEngine" Version="17.14.40264">
+      <ForceIncludeInVSIX>true</ForceIncludeInVSIX>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
