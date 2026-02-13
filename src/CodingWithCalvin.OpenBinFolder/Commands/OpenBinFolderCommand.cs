@@ -7,7 +7,6 @@ using CodingWithCalvin.Otel4Vsix;
 using EnvDTE;
 using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.VCProjectEngine;
 using Project = EnvDTE.Project;
 
 namespace CodingWithCalvin.OpenBinFolder.Commands
@@ -102,9 +101,9 @@ namespace CodingWithCalvin.OpenBinFolder.Commands
 
                 string projectBinPath;
 
-                if (IsCppProject(project.Kind) && project.Object is VCProject vcProject)
+                if (IsCppProject(project.Kind))
                 {
-                    projectBinPath = GetCppOutputPath(vcProject, projectPath);
+                    projectBinPath = GetCppOutputPath(project.Object, projectPath);
                 }
                 else
                 {
@@ -142,16 +141,16 @@ namespace CodingWithCalvin.OpenBinFolder.Commands
                 return string.Equals(projectKind, CppProjectKind, StringComparison.OrdinalIgnoreCase);
             }
 
-            string GetCppOutputPath(VCProject vcProject, string projectPath)
+            string GetCppOutputPath(dynamic vcProject, string projectPath)
             {
-                var activeConfig = vcProject.ActiveConfiguration as VCConfiguration;
+                dynamic activeConfig = vcProject.ActiveConfiguration;
                 if (activeConfig == null)
                 {
                     throw new InvalidOperationException("Unable to get active configuration for C++ project");
                 }
 
                 // Evaluate expands macros like $(OutDir), $(Configuration), $(Platform), etc.
-                var outDir = activeConfig.Evaluate("$(OutDir)");
+                string outDir = activeConfig.Evaluate("$(OutDir)");
 
                 if (Path.IsPathRooted(outDir))
                 {
