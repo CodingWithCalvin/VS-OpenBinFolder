@@ -14,5 +14,4 @@ jobs:
       extension-name: OpenBinFolder
       display-name: 'Open Bin Folder'
       marketplace-id: CodingWithCalvin.VS-OpenBinFolder
-      description: 'Quick access to the builds output folder from the project context menu'
     secrets: inherit
