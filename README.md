@@ -17,21 +17,6 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=CodingWithCalvin.VS-OpenBinFolder">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/CodingWithCalvin.VS-OpenBinFolder?style=for-the-badge" alt="Marketplace Version">
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=CodingWithCalvin.VS-OpenBinFolder">
-    <img src="https://img.shields.io/visual-studio-marketplace/i/CodingWithCalvin.VS-OpenBinFolder?style=for-the-badge" alt="Marketplace Installations">
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=CodingWithCalvin.VS-OpenBinFolder">
-    <img src="https://img.shields.io/visual-studio-marketplace/d/CodingWithCalvin.VS-OpenBinFolder?style=for-the-badge" alt="Marketplace Downloads">
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=CodingWithCalvin.VS-OpenBinFolder">
-    <img src="https://img.shields.io/visual-studio-marketplace/r/CodingWithCalvin.VS-OpenBinFolder?style=for-the-badge" alt="Marketplace Rating">
-  </a>
-</p>
-
 ---
 
 A Visual Studio 2022/2026 extension that adds a right-click context menu command to open the project's bin folder. It intelligently uses the currently active solution/project configuration to navigate to the correct output folder (Debug, Release, etc.).
