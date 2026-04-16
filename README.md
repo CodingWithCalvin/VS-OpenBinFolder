@@ -73,7 +73,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Contributors
 
 <!-- readme: contributors -start -->
-<a href="https://github.com/CalvinAllen"><img src="https://avatars.githubusercontent.com/u/41448698?v=4&s=64" width="64" height="64" alt="CalvinAllen"></a> <a href="https://github.com/DavidsonAudioMulti"><img src="https://avatars.githubusercontent.com/u/47409222?v=4&s=64" width="64" height="64" alt="DavidsonAudioMulti"></a> <a href="https://github.com/MikeCheel"><img src="https://avatars.githubusercontent.com/u/2339881?v=4&s=64" width="64" height="64" alt="MikeCheel"></a> <a href="https://github.com/alenros"><img src="https://avatars.githubusercontent.com/u/13719696?v=4&s=64" width="64" height="64" alt="alenros"></a> 
+<a href="https://github.com/CalvinAllen"><img src="https://avatars.githubusercontent.com/u/41448698?v=4&s=64" width="64" height="64" align="left" alt="CalvinAllen"></a> <a href="https://github.com/DavidsonAudioMulti"><img src="https://avatars.githubusercontent.com/u/47409222?v=4&s=64" width="64" height="64" align="left" alt="DavidsonAudioMulti"></a> <a href="https://github.com/MikeCheel"><img src="https://avatars.githubusercontent.com/u/2339881?v=4&s=64" width="64" height="64" align="left" alt="MikeCheel"></a> <a href="https://github.com/alenros"><img src="https://avatars.githubusercontent.com/u/13719696?v=4&s=64" width="64" height="64" align="left" alt="alenros"></a> <br clear="all">
 <!-- readme: contributors -end -->
 
 ---
